@@ -85,7 +85,7 @@ const Sidebar = (props) => {
   }
   return (
     <>
-      <Layout>
+      <Layout className={style.bgColor}>
         <Content className={`${style.content} ${style.background}`}>
           <Row>
             <Col sm={24} md={9} lg={6} className={style.sidebarContent}>

@@ -46,11 +46,11 @@ export default () => {
                 Algorithm
               </Link>
             </li>
-            <li className={style.navItem}>
+            {/* <li className={style.navItem}>
               <Link to="/tags" onClick={toggleMenu} activeClassName={style.anchorActive}>
                 Tags
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </Layout>
