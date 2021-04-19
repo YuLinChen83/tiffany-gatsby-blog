@@ -1,30 +1,133 @@
 @import (reference) '../../styles/index.less';
 
-.postCard{
-     margin-top: 20px;
-    
-    .postCardImg{
-        width: 100%;
-        height: 164px;
-        background-repeat: no-repeat;
-        border-radius: 10px;
-        box-shadow: 1px 3px 16px #a7a7a7;
-        background-size: cover
+.postCard {
+  margin-top: 20px;
+
+  .postCardImg,
+  .postCardText {
+    width: 100%;
+    height: 164px;
+  }
+
+  .postCardImg {
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-size: cover;
+  }
+
+  .postCardText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 0 15px;
+    position: relative;
+  }
+
+  .mrTp20 {
+    margin-top: 20px;
+  }
+
+  .dateHolder {
+    background: rgba(256, 256, 256, 0.4);
+    color: white;
+    padding: 2px 4px 2px 8px;
+    font-size: 11px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .excerpt {
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+
+    &:hover {
+      display: block;
     }
-    .mrTp20{
-        margin-top: 20px
+  }
+
+  a {
+    color: rgba(0, 0, 0, 0.65);
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.65);
     }
-    .dateHolder{
-        background: #ebbaa1;
-        color: white;
-        padding: 6px;
-        border-radius: 7px;
-        font-size: 11px
+  }
+
+  .tag {
+    color: #ce6d96;
+    word-spacing: 10px;
+
+    &:hover {
+      color: #f8c3d9;
     }
-    a{
-        color: rgba(0, 0, 0, 0.65);
-        &:hover{
-            color: rgba(0, 0, 0, 0.65);
-        }
+  }
+}
+
+.postCard2 {
+  a>div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    >div {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
     }
+  }
+
+  h3 {
+    width: 100%;
+    margin-bottom: 0;
+    flex: 1;
+
+    >span {
+      color: #666;
+      float: right;
+    }
+  }
+
+  .level {
+    margin-left: 1.5rem;
+    float: initial;
+  }
+
+  .dateHolder {
+    color: #ebbaa1;
+    padding: 4px 6px;
+    font-size: 11px;
+  }
+
+  .group {
+    text-transform: uppercase;
+    color: #ebbaa1;
+    border: 1px solid #ebbaa1;
+    padding: 4px;
+    float: left;
+    margin: 0.5rem 0rem;
+    font-size: 8px;
+  }
+
+  @media (min-width: 768px) {
+    a>div {
+      flex-direction: row;
+
+      >div {
+        width: auto;
+      }
+    }
+
+    .group {
+      margin: 0.5rem;
+    }
+  }
 }

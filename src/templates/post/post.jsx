@@ -1,13 +1,12 @@
 import React from 'react';
 import { Layout } from 'antd';
 import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
 import Header from '../../components/PageLayout/Header';
 import SidebarWrapper from '../../components/PageLayout/Sidebar';
 import SEO from '../../components/Seo';
 import Comment from '../../components/Comment';
-import Config from '../../../config';
-import Utils from '../../utils/pageUtils';
+// import Config from '../../../config';
+// import Utils from '../../utils/pageUtils';
 
 import 'prismjs/themes/prism-solarizedlight.css';
 import './highlight-syntax.less';
@@ -15,33 +14,23 @@ import style from './post.module.less';
 
 const Post = ({ data }) => {
   const { html, frontmatter } = data.markdownRemark;
-  const {
-    title, cover: { childImageSharp: { fluid } }, excerpt, path,
-  } = frontmatter;
-
-  const canonicalUrl = Utils.resolvePageUrl(
-    Config.siteUrl,
-    Config.pathPrefix,
-    path,
-  );
+  const { title, excerpt, path } = frontmatter;
+  // const canonicalUrl = Utils.resolvePageUrl(Config.siteUrl, Config.pathPrefix, path);
   return (
     <Layout className="outerPadding">
       <Layout className="container">
         <SEO
           title={title}
-          description={excerpt}
+          description={excerpt || title}
           path={path}
-          keywords={['Rolwin', 'Reevan', 'Monteiro', 'FullStack developer', 'Javascript', 'ReactJS', 'NodeJS', 'Gatsby', 'technology']}
+          keywords={['Tiffany', '霖LiN', 'Fronted developer', 'Javascript', 'ReactJS']}
         />
         <Header />
         <SidebarWrapper>
           <div className="marginTopTitle">
             <h1>{title}</h1>
-            <div className={style.bannerImgContainer}>
-              <Img className={style.bannerImg} fluid={fluid} title={excerpt} alt={title} />
-            </div>
             <article className={style.blogArticle} dangerouslySetInnerHTML={{ __html: html }} />
-            <Comment pageCanonicalUrl={canonicalUrl} pageId={title} />
+            <Comment pageId={path} title={title} />
           </div>
         </SidebarWrapper>
       </Layout>
@@ -60,20 +49,10 @@ export const pageQuery = graphql`
         tags
         path
         excerpt
-        cover {
-          childImageSharp {
-            fluid(maxWidth: 1000) {
-              ...GatsbyImageSharpFluid_tracedSVG
-            }
-          }
-        }
       }
     }
     allMarkdownRemark(
-      filter: {
-        frontmatter: { path: { ne: $postPath } }
-        fileAbsolutePath: { regex: "/index.md$/" }
-      }
+      filter: { frontmatter: { path: { ne: $postPath } }, fileAbsolutePath: { regex: "/index.md$/" } }
     ) {
       edges {
         node {
@@ -82,13 +61,6 @@ export const pageQuery = graphql`
             title
             tags
             excerpt
-            cover {
-              childImageSharp {
-                fluid(maxWidth: 600) {
-                  ...GatsbyImageSharpFluid_tracedSVG
-                }
-              }
-            }
           }
         }
       }

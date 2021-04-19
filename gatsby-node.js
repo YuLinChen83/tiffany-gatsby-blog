@@ -9,7 +9,7 @@ exports.createPages = ({ actions, graphql }) => {
 
   return graphql(`
     {
-      allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}) {
+      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
         edges {
           node {
             frontmatter {
@@ -20,7 +20,7 @@ exports.createPages = ({ actions, graphql }) => {
           }
         }
       }
-    }    
+    }
   `).then((result) => {
     if (result.errors) return Promise.reject(result.errors);
 
@@ -29,11 +29,13 @@ exports.createPages = ({ actions, graphql }) => {
     /* Post pages */
     allMarkdownRemark.edges.forEach(({ node }) => {
       // Check path prefix of post
-      if (node.frontmatter.path.indexOf(config.pages.blog) !== 0) {
+      if (
+        node.frontmatter.path.indexOf(config.pages.blog) !== 0
+        && node.frontmatter.path.indexOf(config.pages.algorithm) !== 0
+      ) {
         // eslint-disable-next-line no-throw-literal
         throw `Invalid path prefix: ${node.frontmatter.path}`;
       }
-
       createPage({
         path: node.frontmatter.path,
         component: path.resolve('src/templates/post/post.jsx'),
@@ -43,10 +45,9 @@ exports.createPages = ({ actions, graphql }) => {
         },
       });
     });
-    const regexForIndex = /index\.md$/;
+    const regexForIndex = /.*\.md$/;
     // Posts in default language, excluded the translated versions
-    const defaultPosts = allMarkdownRemark.edges
-      .filter(({ node: { fileAbsolutePath } }) => fileAbsolutePath.match(regexForIndex));
+    const defaultPosts = allMarkdownRemark.edges.filter(({ node: { fileAbsolutePath } }) => fileAbsolutePath.match(regexForIndex));
 
     /* Tag pages */
     const allTags = [];
@@ -56,16 +57,15 @@ exports.createPages = ({ actions, graphql }) => {
       });
     });
 
-    allTags
-      .forEach((tag) => {
-        createPage({
-          path: utils.resolvePageUrl(config.pages.tag, tag),
-          component: path.resolve('src/templates/tags/index.jsx'),
-          context: {
-            tag,
-          },
-        });
+    allTags.forEach((tag) => {
+      createPage({
+        path: utils.resolvePageUrl(config.pages.tag, tag),
+        component: path.resolve('src/templates/tags/index.jsx'),
+        context: {
+          tag,
+        },
       });
+    });
 
     return 1;
   });

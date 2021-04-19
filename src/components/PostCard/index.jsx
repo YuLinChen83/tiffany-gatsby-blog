@@ -3,32 +3,38 @@ import moment from 'moment';
 import { Link } from 'gatsby';
 import style from './postCard.module.less';
 import Utils from '../../utils/pageUtils';
+import { tags } from '../../../config';
 
 const PostCard = (props) => {
-  const { data: { node: { frontmatter } } } = props;
+  const {
+    data: {
+      node: { frontmatter = { tags: [] } },
+    },
+  } = props;
 
   return (
     <div className={style.postCard}>
       <Link to={Utils.resolvePageUrl(frontmatter.path)}>
         <div
-          className={style.postCardImg}
+          className={style.postCardText}
           style={{
-            backgroundImage: `url(${frontmatter ? frontmatter.cover.childImageSharp.fluid.src : ''})`,
+            backgroundColor: tags[frontmatter.tags[0]].color,
           }}
-        />
-        <div className={style.mrTp20}>
-          <p>
-            <span className={style.dateHolder}>{frontmatter ? moment(frontmatter.date).format('MMM Do YYYY') : ''}</span>
-          </p>
-          <h3>{frontmatter ? frontmatter.title : ''}</h3>
-          <p>{frontmatter ? frontmatter.excerpt : ''}</p>
-          <p style={{ color: '#ce6d96', wordSpacing: '10px' }}>
-            {
-                `#${frontmatter.tags.join(' #')}`
-            }
-          </p>
+        >
+          {frontmatter.title}
+          <span className={style.dateHolder}>
+            {frontmatter.date ? moment(frontmatter.date).format('YYYY/MM/DD') : ''}
+          </span>
         </div>
       </Link>
+      <div className={style.mrTp20}>
+        <p className={style.excerpt}>{frontmatter.excerpt}</p>
+        <p>
+          {frontmatter.tags.map((tag) => (
+            <Link key={tag} className={style.tag} to={`/tags/${tag}`}>{`#${tag} `}</Link>
+          ))}
+        </p>
+      </div>
     </div>
   );
 };

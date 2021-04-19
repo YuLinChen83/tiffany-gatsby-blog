@@ -5,9 +5,7 @@ import Utils from '../../utils/pageUtils';
 import style from './tags.module.less';
 
 const TagCard = (props) => {
-  const {
-    img, name, description, color,
-  } = props;
+  const { img, name, color } = props;
   const tagPage = Config.pages.tag;
   return (
     <Link className={style.tagCard} to={Utils.resolvePageUrl(tagPage, name)}>
@@ -20,14 +18,8 @@ const TagCard = (props) => {
         />
         <div className={style.pd20px}>
           <div className="textCenter">
-            <h4 style={{ color: `${color}` }}>
-              #
-              {name}
-            </h4>
+            <h4 style={{ color: `${color}` }}>#{name}</h4>
           </div>
-          <p>
-            {description}
-          </p>
         </div>
       </div>
     </Link>

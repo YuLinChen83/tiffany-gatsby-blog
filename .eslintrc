@@ -2,7 +2,10 @@
   "extends": "airbnb",
   "rules": {
     "react/prop-types": 0,
-    "react/no-danger":0
+    "react/no-danger": 0,
+    "object-curly-newline": 0,
+    "max-len": 0,
+    "react/jsx-one-expression-per-line": 0
   },
   "globals": {
     "window": true,

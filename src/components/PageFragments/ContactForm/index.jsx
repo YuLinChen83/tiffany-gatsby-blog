@@ -1,6 +1,4 @@
-import {
-  Col, Form, Input, Button, message,
-} from 'antd';
+import { Col, Form, Input, Button, message } from 'antd';
 import React from 'react';
 import Config from '../../../../config';
 
@@ -43,7 +41,7 @@ export default () => {
           <Input.TextArea size="large" rows={7} placeholder="Description *" />
         </Form.Item>
         <Form.Item>
-          <Button type="primary" shape="round" size="large" htmlType="submit" style={{ background: '#304CFD' }}>
+          <Button type="primary" shape="round" size="large" htmlType="submit" style={{ background: '#81D8D0' }}>
             SUBMIT
           </Button>
         </Form.Item>

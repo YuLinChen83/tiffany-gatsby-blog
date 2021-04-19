@@ -4,9 +4,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
-import {
-  Layout, Row, Col,
-} from 'antd';
+import { Layout, Row, Col } from 'antd';
 /* App imports */
 import SEO from '../../components/Seo';
 import Header from '../../components/PageLayout/Header';
@@ -18,10 +16,12 @@ import style from './tags.module.less';
 
 const TagPage = ({ data, pageContext }) => {
   const { tag } = pageContext;
-  const tagName = Config.tags[tag].name || Utils.capitalize(tag);
+  const tagObj = Config.tags[tag] || {};
+  const tagName = tagObj.name || Utils.capitalize(tag);
   const tagPagePath = Config.pages.tag;
-  const tagImage = data.allFile.edges.find((edge) => edge.node.name === tag).node
-    .childImageSharp.fluid;
+  const tagImage = data.allFile.edges.find((edge) => edge.node.name === tag)
+    ? data.allFile.edges.find((edge) => edge.node.name === tag).node.childImageSharp.fluid
+    : null;
   const posts = data.allMarkdownRemark.edges;
   return (
     <Layout className="outerPadding">
@@ -29,26 +29,21 @@ const TagPage = ({ data, pageContext }) => {
         <Header />
         <SEO
           title={tagName}
-          description={`All post about ${tagName}. ${Config.tags[tag].description} `}
+          description={`All post about ${tagName}. ${tagObj.description} `}
           path={Utils.resolvePageUrl(tagPagePath, tag)}
           keywords={[tagName]}
         />
         <SidebarWrapper>
           <div className={`marginTopTitle ${style.tagsList}`}>
-            <h1>
-              #
-              {tagName}
-            </h1>
+            <h1>#{tagName}</h1>
             <div className={style.bannerImgContainer}>
               <Img className={style.bannerImg} fluid={tagImage} alt={tagName} />
             </div>
-            <h4 className="textCenter">
-              {Config.tags[tag].description}
-            </h4>
+            <h4 className="textCenter">{tagObj.description}</h4>
           </div>
           <Row gutter={[20, 20]}>
             {posts.map((post, key) => (
-            // eslint-disable-next-line react/no-array-index-key
+              // eslint-disable-next-line react/no-array-index-key
               <Col key={key} xs={24} sm={24} md={12} lg={8}>
                 <PostCard data={post} />
               </Col>
@@ -86,10 +81,7 @@ TagPage.propTypes = {
 export const pageQuery = graphql`
   query($tag: String!) {
     allMarkdownRemark(
-      filter: {
-        frontmatter: { tags: { in: [$tag] } }
-        fileAbsolutePath: { regex: "/index.md$/" }
-      }
+      filter: { frontmatter: { tags: { in: [$tag] } }, fileAbsolutePath: { regex: "/index.md$/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
@@ -100,13 +92,6 @@ export const pageQuery = graphql`
             path
             tags
             excerpt
-            cover {
-              childImageSharp {
-                fluid(maxWidth: 600) {
-                  ...GatsbyImageSharpFluid_tracedSVG
-                }
-              }
-            }
           }
         }
       }

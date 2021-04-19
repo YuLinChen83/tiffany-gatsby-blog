@@ -16,13 +16,13 @@ module.exports = [
   {
     resolve: 'gatsby-plugin-manifest',
     options: {
-      name: 'Rolwin Reevan',
-      short_name: 'Rolwin Reevan',
+      name: 'Tiffany Chen',
+      short_name: 'Tiffany',
       start_url: '/',
-      background_color: '#304CFD',
-      theme_color: '#304CFD',
+      background_color: '#81D8D0',
+      theme_color: '#81D8D0',
       display: 'standalone',
-      icon: 'src/images/icon.png', // This path is relative to the root of the site.
+      icon: 'src/images/favicon.png', // This path is relative to the root of the site.
       legacy: true, // this will add apple-touch-icon links to <head>. Required for
       // versions prior to iOS 11.3.
     },
@@ -39,6 +39,22 @@ module.exports = [
     options: {
       plugins: [
         {
+          resolve: 'gatsby-remark-highlight-code',
+          options: {
+            terminal: 'carbon',
+            theme: 'monokai',
+            lineNumbers: true,
+          },
+        },
+        {
+          resolve: 'gatsby-remark-copy-linked-files',
+          options: {
+            destinationDir: 'path/to/dir',
+            ignoreFileExtensions: ['png', 'jpg', 'jpeg', 'bmp', 'tiff'],
+          },
+        },
+        'gatsby-remark-responsive-iframe',
+        {
           resolve: 'gatsby-remark-images',
           options: {
             maxWidth: 1000,
@@ -53,10 +69,35 @@ module.exports = [
             rel: 'nofollow',
           },
         },
-        'gatsby-remark-prismjs',
       ],
     },
   },
+  // {
+  //   resolve: 'gatsby-transformer-remark',
+  //   options: {
+  //     plugins: [
+  //       {
+  //         resolve: 'gatsby-remark-highlight-code',
+  //       },
+  //       {
+  //         resolve: 'gatsby-remark-images',
+  //         options: {
+  //           maxWidth: 1000,
+  //           quality: 80,
+  //           showCaptions: true,
+  //           linkImagesToOriginal: false,
+  //         },
+  //       },
+  //       {
+  //         resolve: 'gatsby-remark-external-links',
+  //         options: {
+  //           rel: 'nofollow',
+  //         },
+  //       },
+  //       'gatsby-remark-prismjs',
+  //     ],
+  //   },
+  // },
   {
     resolve: 'gatsby-plugin-i18n',
     options: {
@@ -84,15 +125,15 @@ module.exports = [
       },
     },
   },
-  {
-    resolve: 'gatsby-plugin-google-analytics',
-    options: {
-      // The property ID; the tracking code won't be generated without it
-      trackingId: config.googleAnalyticTrackingId,
-      // Defines where to place the tracking script - `true` in the head and `false` in the body
-      head: false,
-    },
-  },
+  // {
+  //   resolve: 'gatsby-plugin-google-analytics',
+  //   options: {
+  //     // The property ID; the tracking code won't be generated without it
+  //     trackingId: config.googleAnalyticTrackingId,
+  //     // Defines where to place the tracking script - `true` in the head and `false` in the body
+  //     head: false,
+  //   },
+  // },
   {
     resolve: 'gatsby-plugin-nprogress',
     options: {
@@ -100,6 +141,12 @@ module.exports = [
       color: 'black',
       // Disable the loading spinner.
       showSpinner: true,
+    },
+  },
+  {
+    resolve: 'gatsby-plugin-disqus',
+    options: {
+      shortname: 'tiffany-blog',
     },
   },
 ];
