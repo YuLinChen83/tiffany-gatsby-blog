@@ -31,11 +31,11 @@ export default () => {
       <Layout className={`${style.navWrap} ${menu ? null : style.hidden} ${menu ? style.openMenu : null}`}>
         <div className={style.backgroundDiv}>
           <ul className={style.nav}>
-            <li className={style.navItem}>
+            {/* <li className={style.navItem}>
               <Link to="/" onClick={toggleMenu} activeClassName={style.anchorActive}>
-                About
+                Home
               </Link>
-            </li>
+            </li> */}
             <li className={style.navItem}>
               <Link to="/blog" onClick={toggleMenu} activeClassName={style.anchorActive}>
                 Blog
@@ -51,6 +51,11 @@ export default () => {
                 Tags
               </Link>
             </li> */}
+            <li className={style.navItem}>
+              <Link to="/" onClick={toggleMenu} activeClassName={style.anchorActive}>
+                About
+              </Link>
+            </li>
           </ul>
         </div>
       </Layout>

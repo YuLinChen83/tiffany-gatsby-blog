@@ -1,4 +1,7 @@
 const config = require('./config');
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
 
 module.exports = [
   'gatsby-plugin-react-helmet',
@@ -70,6 +73,12 @@ module.exports = [
           },
         },
       ],
+    },
+  },
+  {
+    resolve: 'gatsby-source-instagram-all',
+    options: {
+      access_token: process.env.INSTAGRAM_TOKEN,
     },
   },
   // {

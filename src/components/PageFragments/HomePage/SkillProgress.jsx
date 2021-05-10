@@ -13,25 +13,24 @@ const SkillsProgress = () => (
         <ProgressBar percent={80} text="ReactJS (Class component / Hooks)" />
         <ProgressBar percent={90} text="Redux" />
         <ProgressBar percent={70} text="Redux-Observable" />
-        <ProgressBar percent={90} text="Ant Design" />
+        <ProgressBar percent={80} text="Ant Design" />
         <ProgressBar percent={80} text="CSS, SCSS" />
         <ProgressBar percent={60} text="RxJS" />
         <ProgressBar percent={60} text="Vue.js" />
-        <ProgressBar percent={75} text="Jest" />
+        <ProgressBar percent={70} text="Jest" />
         <ProgressBar percent={90} text="Git (GUI: GitKraken, SourceTree)" />
         <ProgressBar percent={80} text="ESLint" />
-        <ProgressBar percent={80} text="NodeJS" />
-        <ProgressBar percent={60} text="Webpack" />
+        <ProgressBar percent={70} text="NodeJS" />
+        <ProgressBar percent={50} text="Webpack" />
         <ProgressBar percent={40} text="Docker" />
       </Col>
       <Col xs={24} sm={24} md={12}>
         <div className={style.more}>
-          <p>其他曾經工作或在學時接觸過／自己略研究過：</p>
+          <p><span>其他</span>曾經工作或在學時接觸過／自己略研究過：</p>
           <h3>Frontend</h3>
           <ul>
             <li>TypeScript</li>
             <li>Apollo Client</li>
-            <li>Java Play Framework</li>
             <li>Ruby on Rails</li>
             <li>Bootstrap, Material Design, LESS</li>
             <li>Angular1/2</li>
@@ -56,6 +55,7 @@ const SkillsProgress = () => (
             <li>Storybook</li>
             <li>Markdown</li>
             <li>GatsbyJS, Hexo, Wordpress</li>
+            <li>Java Play Framework</li>
             <li>SVN, TFS</li>
             <li>Java</li>
             <li>Assembly Language</li>
