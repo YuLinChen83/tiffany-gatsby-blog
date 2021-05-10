@@ -46,7 +46,7 @@
 <url> <loc>http://localhost:8000/tiffany-gatsby-blog/tags/reactjs</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://localhost:8000/tiffany-gatsby-blog/tags/asp.net</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://localhost:8000/tiffany-gatsby-blog/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://localhost:8000/tiffany-gatsby-blog/blog/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://localhost:8000/tiffany-gatsby-blog/algorithm/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://localhost:8000/tiffany-gatsby-blog/blog/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://localhost:8000/tiffany-gatsby-blog/tags/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
