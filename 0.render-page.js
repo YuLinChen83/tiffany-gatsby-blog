@@ -1,9 +1,9 @@
 exports.ids = [0];
 exports.modules = {
 
-/***/ "./node_modules/@deckdeckgo/highlight-code/dist/esm/deckdeckgo-highlight-code-languages-5f0b1c54.js":
+/***/ "./node_modules/@deckdeckgo/highlight-code/dist/esm/deckdeckgo-highlight-code-languages-93c3ae76.js":
 /*!**********************************************************************************************************!*\
-  !*** ./node_modules/@deckdeckgo/highlight-code/dist/esm/deckdeckgo-highlight-code-languages-5f0b1c54.js ***!
+  !*** ./node_modules/@deckdeckgo/highlight-code/dist/esm/deckdeckgo-highlight-code-languages-93c3ae76.js ***!
   \**********************************************************************************************************/
 /*! exports provided: D, a, d */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -113,13 +113,16 @@ const deckdeckgoHighlightCodeLanguages = {
   cil: { title: 'CIL' },
   clojure: { title: 'Clojure' },
   cmake: { title: 'CMake' },
+  cobol: { title: 'COBOL' },
   coffeescript: { title: 'CoffeeScript' },
   coffee: { title: 'coffee', main: 'coffeescript' },
   concurnas: { title: 'Concurnas' },
   conc: { title: 'conc', main: 'concurnas' },
   csp: { title: 'Content-Security-Policy' },
+  coq: { title: 'Coq' },
   crystal: { title: 'Crystal', require: ['ruby'] },
   'css-extras': { title: 'CSS Extras', require: ['css'] },
+  csv: { title: 'CSV' },
   cypher: { title: 'Cypher' },
   d: { title: 'D' },
   dart: { title: 'Dart' },
@@ -150,6 +153,7 @@ const deckdeckgoHighlightCodeLanguages = {
   xls: { title: 'xls', main: 'excel-formula' },
   fsharp: { title: 'F#' },
   factor: { title: 'Factor' },
+  false: { title: 'False' },
   'firestore-security-rules': { title: 'Firestore security rules' },
   flow: { title: 'Flow' },
   fortran: { title: 'Fortran' },
@@ -192,6 +196,7 @@ const deckdeckgoHighlightCodeLanguages = {
   javadoc: { title: 'JavaDoc', require: ['markup', 'java', 'javadoclike'] },
   javadoclike: { title: 'JavaDoc-like' },
   javastacktrace: { title: 'Java stack trace' },
+  jexl: { title: 'Jexl' },
   jolie: { title: 'Jolie' },
   jq: { title: 'JQ' },
   jsdoc: { title: 'JSDoc', require: ['javadoclike', 'typescript'] },
@@ -223,6 +228,7 @@ const deckdeckgoHighlightCodeLanguages = {
   'emacs-lisp': { title: 'emacs-lisp', main: 'lisp' },
   livescript: { title: 'LiveScript' },
   llvm: { title: 'LLVM IR' },
+  log: { title: 'Log file' },
   lolcode: { title: 'LOLCODE' },
   lua: { title: 'Lua' },
   makefile: { title: 'Makefile' },
@@ -244,6 +250,7 @@ const deckdeckgoHighlightCodeLanguages = {
   nani: { title: 'nani', main: 'naniscript' },
   nasm: { title: 'NASM' },
   neon: { title: 'NEON' },
+  nevod: { title: 'Nevod' },
   nginx: { title: 'nginx' },
   nim: { title: 'Nim' },
   nix: { title: 'Nix' },
@@ -252,6 +259,8 @@ const deckdeckgoHighlightCodeLanguages = {
   objc: { title: 'objc', main: 'objectivec', require: ['c'] },
   ocaml: { title: 'OCaml' },
   opencl: { title: 'OpenCL', require: ['c'] },
+  openqasm: { title: 'OpenQasm' },
+  qasm: { title: 'qasm', main: 'openqasm' },
   oz: { title: 'Oz' },
   parigp: { title: 'PARI/GP' },
   parser: { title: 'Parser', require: ['markup'] },
@@ -286,6 +295,8 @@ const deckdeckgoHighlightCodeLanguages = {
   purs: { title: 'purs', main: 'purescript', require: ['haskell'] },
   python: { title: 'Python' },
   py: { title: 'py', main: 'python' },
+  qsharp: { title: 'Q#' },
+  qs: { title: 'qs', main: 'qsharp' },
   q: { title: 'Q (kdb+ database)' },
   qml: { title: 'QML' },
   qore: { title: 'Qore' },
@@ -396,7 +407,7 @@ const deckdeckgoHighlightCodeLanguages = {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "deckgo_highlight_code", function() { return DeckdeckgoHighlightCode; });
 /* harmony import */ var _index_5142f31b_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index-5142f31b.js */ "./node_modules/@deckdeckgo/highlight-code/dist/esm/index-5142f31b.js");
-/* harmony import */ var _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./deckdeckgo-highlight-code-languages-5f0b1c54.js */ "./node_modules/@deckdeckgo/highlight-code/dist/esm/deckdeckgo-highlight-code-languages-5f0b1c54.js");
+/* harmony import */ var _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./deckdeckgo-highlight-code-languages-93c3ae76.js */ "./node_modules/@deckdeckgo/highlight-code/dist/esm/deckdeckgo-highlight-code-languages-93c3ae76.js");
 
 
 
@@ -2135,61 +2146,61 @@ function loadTheme(theme) {
     return undefined;
   }
   switch (theme) {
-    case _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["a"]['3024-NIGHT']:
+    case _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["a"]['3024-NIGHT']:
       return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! ./3024-night-8138cc8f.js */ "./node_modules/@deckdeckgo/highlight-code/dist/esm/3024-night-8138cc8f.js"));
-    case _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["a"]['A11Y-DARK']:
+    case _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["a"]['A11Y-DARK']:
       return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ./a11y-dark-533291b3.js */ "./node_modules/@deckdeckgo/highlight-code/dist/esm/a11y-dark-533291b3.js"));
-    case _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["a"]['BASE16-DARK']:
+    case _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["a"]['BASE16-DARK']:
       return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! ./base16-dark-12f375e0.js */ "./node_modules/@deckdeckgo/highlight-code/dist/esm/base16-dark-12f375e0.js"));
-    case _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["a"]['BASE16-LIGHT']:
+    case _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["a"]['BASE16-LIGHT']:
       return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! ./base16-light-52469b64.js */ "./node_modules/@deckdeckgo/highlight-code/dist/esm/base16-light-52469b64.js"));
-    case _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["a"].BLACKBOARD:
+    case _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["a"].BLACKBOARD:
       return __webpack_require__.e(/*! import() */ 5).then(__webpack_require__.bind(null, /*! ./blackboard-db1ca116.js */ "./node_modules/@deckdeckgo/highlight-code/dist/esm/blackboard-db1ca116.js"));
-    case _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["a"].COBALT:
+    case _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["a"].COBALT:
       return __webpack_require__.e(/*! import() */ 6).then(__webpack_require__.bind(null, /*! ./cobalt-5d681c9a.js */ "./node_modules/@deckdeckgo/highlight-code/dist/esm/cobalt-5d681c9a.js"));
-    case _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["a"].DUOTONE:
+    case _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["a"].DUOTONE:
       return __webpack_require__.e(/*! import() */ 8).then(__webpack_require__.bind(null, /*! ./duotone-acd564a2.js */ "./node_modules/@deckdeckgo/highlight-code/dist/esm/duotone-acd564a2.js"));
-    case _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["a"].HOPSCOTCH:
+    case _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["a"].HOPSCOTCH:
       return __webpack_require__.e(/*! import() */ 9).then(__webpack_require__.bind(null, /*! ./hopscotch-4820dd1a.js */ "./node_modules/@deckdeckgo/highlight-code/dist/esm/hopscotch-4820dd1a.js"));
-    case _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["a"].LUCARIO:
+    case _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["a"].LUCARIO:
       return __webpack_require__.e(/*! import() */ 10).then(__webpack_require__.bind(null, /*! ./lucario-59b2ad39.js */ "./node_modules/@deckdeckgo/highlight-code/dist/esm/lucario-59b2ad39.js"));
-    case _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["a"].MATERIAL:
+    case _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["a"].MATERIAL:
       return __webpack_require__.e(/*! import() */ 11).then(__webpack_require__.bind(null, /*! ./material-8e59c55f.js */ "./node_modules/@deckdeckgo/highlight-code/dist/esm/material-8e59c55f.js"));
-    case _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["a"].MONOKAI:
+    case _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["a"].MONOKAI:
       return __webpack_require__.e(/*! import() */ 12).then(__webpack_require__.bind(null, /*! ./monokai-c3bd40c3.js */ "./node_modules/@deckdeckgo/highlight-code/dist/esm/monokai-c3bd40c3.js"));
-    case _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["a"]['NIGHT-OWL']:
+    case _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["a"]['NIGHT-OWL']:
       return __webpack_require__.e(/*! import() */ 13).then(__webpack_require__.bind(null, /*! ./night-owl-36dc5565.js */ "./node_modules/@deckdeckgo/highlight-code/dist/esm/night-owl-36dc5565.js"));
-    case _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["a"].NORD:
+    case _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["a"].NORD:
       return __webpack_require__.e(/*! import() */ 14).then(__webpack_require__.bind(null, /*! ./nord-ce9f3484.js */ "./node_modules/@deckdeckgo/highlight-code/dist/esm/nord-ce9f3484.js"));
-    case _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["a"]['OCEANIC-NEXT']:
+    case _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["a"]['OCEANIC-NEXT']:
       return __webpack_require__.e(/*! import() */ 15).then(__webpack_require__.bind(null, /*! ./oceanic-next-e3f20f17.js */ "./node_modules/@deckdeckgo/highlight-code/dist/esm/oceanic-next-e3f20f17.js"));
-    case _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["a"]['ONE-DARK']:
+    case _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["a"]['ONE-DARK']:
       return __webpack_require__.e(/*! import() */ 16).then(__webpack_require__.bind(null, /*! ./one-dark-3da1a5b7.js */ "./node_modules/@deckdeckgo/highlight-code/dist/esm/one-dark-3da1a5b7.js"));
-    case _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["a"]['ONE-LIGHT']:
+    case _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["a"]['ONE-LIGHT']:
       return __webpack_require__.e(/*! import() */ 17).then(__webpack_require__.bind(null, /*! ./one-light-81b6cd67.js */ "./node_modules/@deckdeckgo/highlight-code/dist/esm/one-light-81b6cd67.js"));
-    case _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["a"].PANDA:
+    case _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["a"].PANDA:
       return __webpack_require__.e(/*! import() */ 18).then(__webpack_require__.bind(null, /*! ./panda-2e75c11f.js */ "./node_modules/@deckdeckgo/highlight-code/dist/esm/panda-2e75c11f.js"));
-    case _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["a"].PARAISO:
+    case _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["a"].PARAISO:
       return __webpack_require__.e(/*! import() */ 19).then(__webpack_require__.bind(null, /*! ./paraiso-cc30311f.js */ "./node_modules/@deckdeckgo/highlight-code/dist/esm/paraiso-cc30311f.js"));
-    case _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["a"].SETI:
+    case _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["a"].SETI:
       return __webpack_require__.e(/*! import() */ 20).then(__webpack_require__.bind(null, /*! ./seti-977c4512.js */ "./node_modules/@deckdeckgo/highlight-code/dist/esm/seti-977c4512.js"));
-    case _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["a"]['SHADES-OF-PURPLE']:
+    case _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["a"]['SHADES-OF-PURPLE']:
       return __webpack_require__.e(/*! import() */ 21).then(__webpack_require__.bind(null, /*! ./shades-of-purple-649a9b24.js */ "./node_modules/@deckdeckgo/highlight-code/dist/esm/shades-of-purple-649a9b24.js"));
-    case _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["a"]['SOLARIZED-DARK']:
+    case _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["a"]['SOLARIZED-DARK']:
       return __webpack_require__.e(/*! import() */ 22).then(__webpack_require__.bind(null, /*! ./solarized-dark-d1ab5e8b.js */ "./node_modules/@deckdeckgo/highlight-code/dist/esm/solarized-dark-d1ab5e8b.js"));
-    case _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["a"]['SOLARIZED-LIGHT']:
+    case _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["a"]['SOLARIZED-LIGHT']:
       return __webpack_require__.e(/*! import() */ 23).then(__webpack_require__.bind(null, /*! ./solarized-light-429511f1.js */ "./node_modules/@deckdeckgo/highlight-code/dist/esm/solarized-light-429511f1.js"));
-    case _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["a"].SYNTHWAVE:
+    case _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["a"].SYNTHWAVE:
       return __webpack_require__.e(/*! import() */ 24).then(__webpack_require__.bind(null, /*! ./synthwave-af3bb869.js */ "./node_modules/@deckdeckgo/highlight-code/dist/esm/synthwave-af3bb869.js"));
-    case _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["a"].TWILIGHT:
+    case _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["a"].TWILIGHT:
       return __webpack_require__.e(/*! import() */ 25).then(__webpack_require__.bind(null, /*! ./twilight-68d946d8.js */ "./node_modules/@deckdeckgo/highlight-code/dist/esm/twilight-68d946d8.js"));
-    case _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["a"].VERMINAL:
+    case _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["a"].VERMINAL:
       return __webpack_require__.e(/*! import() */ 26).then(__webpack_require__.bind(null, /*! ./verminal-f2bc4235.js */ "./node_modules/@deckdeckgo/highlight-code/dist/esm/verminal-f2bc4235.js"));
-    case _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["a"].VSCODE:
+    case _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["a"].VSCODE:
       return __webpack_require__.e(/*! import() */ 27).then(__webpack_require__.bind(null, /*! ./vscode-1e0057d8.js */ "./node_modules/@deckdeckgo/highlight-code/dist/esm/vscode-1e0057d8.js"));
-    case _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["a"].YETI:
+    case _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["a"].YETI:
       return __webpack_require__.e(/*! import() */ 28).then(__webpack_require__.bind(null, /*! ./yeti-67a4664e.js */ "./node_modules/@deckdeckgo/highlight-code/dist/esm/yeti-67a4664e.js"));
-    case _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["a"].ZENBURN:
+    case _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["a"].ZENBURN:
       return __webpack_require__.e(/*! import() */ 29).then(__webpack_require__.bind(null, /*! ./zenburn-a2e7f052.js */ "./node_modules/@deckdeckgo/highlight-code/dist/esm/zenburn-a2e7f052.js"));
     default:
       return __webpack_require__.e(/*! import() */ 7).then(__webpack_require__.bind(null, /*! ./dracula-0eb4b4d6.js */ "./node_modules/@deckdeckgo/highlight-code/dist/esm/dracula-0eb4b4d6.js"));
@@ -2202,7 +2213,7 @@ const CarbonThemeStyle = ({ style }) => {
     `));
 };
 
-const deckdeckgoHighlightCodeCss = "code[class*=\"language-\"],pre[class*=\"language-\"]{color:black;background:none;text-shadow:0 1px white;font-family:Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=\"language-\"]::-moz-selection,pre[class*=\"language-\"] ::-moz-selection,code[class*=\"language-\"]::-moz-selection,code[class*=\"language-\"] ::-moz-selection{text-shadow:none;background:#b3d4fc}pre[class*=\"language-\"]::selection,pre[class*=\"language-\"] ::selection,code[class*=\"language-\"]::selection,code[class*=\"language-\"] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=\"language-\"],pre[class*=\"language-\"]{text-shadow:none}}pre[class*=\"language-\"]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=\"language-\"],pre[class*=\"language-\"]{background:#f5f2f0}:not(pre)>code[class*=\"language-\"]{padding:.1em;border-radius:.3em;white-space:normal}.token.comment,.token.prolog,.token.doctype,.token.cdata{color:slategray}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.property,.token.tag,.token.boolean,.token.number,.token.constant,.token.symbol,.token.deleted{color:#905}.token.selector,.token.attr-name,.token.string,.token.char,.token.builtin,.token.inserted{color:#690}.token.operator,.token.entity,.token.url,.language-css .token.string,.style .token.string{color:#9a6e3a;background:hsla(0, 0%, 100%, .5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.function,.token.class-name{color:#DD4A68}.token.regex,.token.important,.token.variable{color:#e90}.token.important,.token.bold{font-weight:bold}.token.italic{font-style:italic}.token.entity{cursor:help}:host ::slotted([slot=code]){display:none}:host([editable]){cursor:text}:host([editable]) code:empty:not(:focus):after{content:var(--deckgo-highlight-code-empty-text, \"Click to add your code\")}:host(.deckgo-highlight-code-carbon){display:var(--deckgo-highlight-code-carbon-display, block);overflow:var(--deckgo-highlight-code-carbon-overflow, auto);border:var(--deckgo-highlight-code-carbon-border);border-radius:var(--deckgo-highlight-code-carbon-border-radius, 4px);background:var(--deckgo-highlight-code-carbon-background, #282a36);color:var(--deckgo-highlight-code-carbon-color, white);box-shadow:var(--deckgo-highlight-code-carbon-box-shadow, rgba(0, 0, 0, 0.55) 0 8px 16px);margin:var(--deckgo-highlight-code-carbon-margin, 16px 0)}:host(.deckgo-highlight-code-carbon) div.deckgo-highlight-code-container{margin:var(--deckgo-highlight-code-margin, 0 0 16px)}:host(.deckgo-highlight-code-carbon) div.deckgo-highlight-code-container code>div.deckgo-highlight-code-line-number:before{background:var(--deckgo-highlight-code-carbon-background, transparent);border-color:var(--deckgo-highlight-code-line-numbers, var(--deckgo-highlight-code-token-comment, #6272a4));color:var(--deckgo-highlight-code-line-numbers, var(--deckgo-highlight-code-token-comment, #6272a4))}:host(.deckgo-highlight-code-carbon) ::slotted([slot=code]){color:var(--deckgo-highlight-code-carbon-color, white)}:host(.deckgo-highlight-code-ubuntu){display:var(--deckgo-highlight-code-ubuntu-display, block);overflow:var(--deckgo-highlight-code-ubuntu-overflow, auto);border:var(--deckgo-highlight-code-ubuntu-border);border-radius:var(--deckgo-highlight-code-ubuntu-border-radius, 6px 6px 0 0);background:var(--deckgo-highlight-code-ubuntu-background, #4c1e3d);color:var(--deckgo-highlight-code-ubuntu-color, #ddd);box-shadow:var(--deckgo-highlight-code-ubuntu-box-shadow, 2px 4px 10px rgba(0, 0, 0, 0.5));margin:var(--deckgo-highlight-code-ubuntu-margin, 16px 0)}:host(.deckgo-highlight-code-ubuntu) div.deckgo-highlight-code-container{margin:var(--deckgo-highlight-code-margin, 0 0 16px);padding:var(--deckgo-highlight-code-padding, 2px 0 0);background:transparent}:host(.deckgo-highlight-code-ubuntu) div.deckgo-highlight-code-container code{font-family:var(--deckgo-highlight-code-font-family, \"Ubuntu mono\")}:host(.deckgo-highlight-code-ubuntu) div.deckgo-highlight-code-container code>div.deckgo-highlight-code-line-number:before{background:var(--deckgo-highlight-code-ubuntu-background, #4c1e3d)}:host(.deckgo-highlight-code-ubuntu) ::slotted([slot=code]){color:var(--deckgo-highlight-code-ubuntu-color, #ddd)}div.deckgo-highlight-code-container{color:var(--deckgo-highlight-code-color, inherit);background:var(--deckgo-highlight-code-background);padding:var(--deckgo-highlight-code-padding, 0 16px);border-radius:var(--deckgo-highlight-code-border-radius);margin:var(--deckgo-highlight-code-margin, 16px 0);transform-origin:bottom left;transition:all 0.2s ease-in-out;transform:scale(var(--deckgo-highlight-code-zoom, 1));direction:var(--deckgo-highlight-code-direction, ltr);text-align:var(--deckgo-highlight-code-text-align, start);width:var(--deckgo-highlight-code-container-width);height:var(--deckgo-highlight-code-container-height);display:var(--deckgo-highlight-code-container-display, block);justify-content:var(--deckgo-highlight-code-container-justify-content);flex-direction:var(--deckgo-highlight-code-container-flex-direction);align-items:var(--deckgo-highlight-code-container-align-items)}div.deckgo-highlight-code-container code{overflow-y:var(--deckgo-highlight-code-scroll, auto);white-space:var(--deckgo-highlight-code-white-space, pre-wrap);font-size:var(--deckgo-highlight-code-font-size);font-family:var(--deckgo-highlight-code-font-family, monospace);line-height:var(--deckgo-highlight-code-line-height);display:var(--deckgo-highlight-code-display, block);counter-reset:linenumber;height:100%;}div.deckgo-highlight-code-container code>div.deckgo-highlight-code-line-number{counter-increment:linenumber;position:relative;padding-left:3.5em}div.deckgo-highlight-code-container code>div.deckgo-highlight-code-line-number:before{content:counter(linenumber);display:inline-block;position:absolute;top:0;bottom:0;left:0;width:2.5em;background:var(--deckgo-highlight-code-background);border-right:1px solid var(--deckgo-highlight-code-line-numbers, var(--deckgo-highlight-code-token-comment, #6272a4));color:var(--deckgo-highlight-code-line-numbers, var(--deckgo-highlight-code-token-comment, #6272a4))}div.deckgo-highlight-code-container code span.deckgo-highlight-code-anchor-hidden{visibility:hidden}div.deckgo-highlight-code-container code .deckgo-highlight-code-line{background:var(--deckgo-highlight-code-line-background, #3e4564);border-top:var(--deckgo-highlight-code-line-border-top);border-bottom:var(--deckgo-highlight-code-line-border-bottom)}div.deckgo-highlight-code-container code .language-css .token.string:not(.deckgo-highlight-code-line),div.deckgo-highlight-code-container code .style .token.string:not(.deckgo-highlight-code-line),div.deckgo-highlight-code-container code .token.entity:not(.deckgo-highlight-code-line),div.deckgo-highlight-code-container code .token.operator:not(.deckgo-highlight-code-line),div.deckgo-highlight-code-container code .token.url:not(.deckgo-highlight-code-line){background:inherit}div.deckgo-highlight-code-container code .token.comment,div.deckgo-highlight-code-container code .token.prolog,div.deckgo-highlight-code-container code .token.doctype,div.deckgo-highlight-code-container code .token.cdata{color:var(--deckgo-highlight-code-token-comment, #6272a4)}div.deckgo-highlight-code-container code .token.punctuation{color:var(--deckgo-highlight-code-token-punctuation, #6272a4)}div.deckgo-highlight-code-container code .token.property,div.deckgo-highlight-code-container code .token.tag,div.deckgo-highlight-code-container code .token.boolean,div.deckgo-highlight-code-container code .token.number,div.deckgo-highlight-code-container code .token.constant,div.deckgo-highlight-code-container code .token.symbol,div.deckgo-highlight-code-container code .token.deleted{color:var(--deckgo-highlight-code-token-property, #bd93f9)}div.deckgo-highlight-code-container code .token.selector,div.deckgo-highlight-code-container code .token.attr-name,div.deckgo-highlight-code-container code .token.string,div.deckgo-highlight-code-container code .token.char,div.deckgo-highlight-code-container code .token.builtin,div.deckgo-highlight-code-container code .token.inserted{color:var(--deckgo-highlight-code-token-selector, #50fa7b)}div.deckgo-highlight-code-container code .token.operator,div.deckgo-highlight-code-container code .token.entity,div.deckgo-highlight-code-container code .token.url,div.deckgo-highlight-code-container code .language-css .token.string,div.deckgo-highlight-code-container code .style .token.string{color:var(--deckgo-highlight-code-token-operator, #ff79c6)}div.deckgo-highlight-code-container code .token.atrule,div.deckgo-highlight-code-container code .token.attr-value,div.deckgo-highlight-code-container code .token.keyword{color:var(--deckgo-highlight-code-token-atrule, #ff79c6)}div.deckgo-highlight-code-container code .token.function,div.deckgo-highlight-code-container code .token.class-name{color:var(--deckgo-highlight-code-token-function, #ffb86c)}div.deckgo-highlight-code-container code .token.regex,div.deckgo-highlight-code-container code .token.important,div.deckgo-highlight-code-container code .token.variable{color:var(--deckgo-highlight-code-token-regex, #f1fa8c)}div.carbon{display:flex;justify-content:flex-start;padding:var(--deckgo-highlight-code-carbon-header-padding, 8px 16px);margin:var(--deckgo-highlight-code-carbon-header-margin, 0)}div.carbon>div{display:var(--deckgo-highlight-code-carbon-toolbar-display, \"block\");width:var(--deckgo-highlight-code-carbon-header-button-width, 12px);height:var(--deckgo-highlight-code-carbon-header-button-height, 12px);border-radius:var(--deckgo-highlight-code-carbon-header-button-border-radius, 50%);margin:var(--deckgo-highlight-code-carbon-header-button-margin, 8px 6px 8px 0)}div.carbon>div.red{background:var(--deckgo-highlight-code-carbon-header-button-red-background, #ff5f56);border:var(--deckgo-highlight-code-carbon-header-button-red-border, 0.5px solid #e0443e)}div.carbon>div.yellow{background:var(--deckgo-highlight-code-carbon-header-button-yellow-background, #ffbd2e);border:var(--deckgo-highlight-code-carbon-header-button-yellow-border, 0.5px solid #dea123)}div.carbon>div.green{background:var(--deckgo-highlight-code-carbon-header-button-green-background, #27c93f);border:var(--deckgo-highlight-code-carbon-header-button-green-border, 0.5px solid #1aab29)}div.ubuntu{display:flex;justify-content:flex-start;align-items:center;padding:var(--deckgo-highlight-code-ubuntu-header-padding, 0 8px);height:var(--deckgo-highlight-code-ubuntu-header-height, 25px);background:var(--deckgo-highlight-code-ubuntu-header-background, linear-gradient(#504b45 0%, #3c3b37 100%));font-family:var(--deckgo-highlight-code-ubuntu-header-font-family, \"Ubuntu\")}div.ubuntu>div{display:flex;align-items:center;justify-content:center;width:var(--deckgo-highlight-code-ubuntu-header-button-width, 12px);height:var(--deckgo-highlight-code-ubuntu-header-button-height, 12px);border-radius:var(--deckgo-highlight-code-ubuntu-header-button-border-radius, 50%);margin:var(--deckgo-highlight-code-ubuntu-header-button-margin, 0 4px 0 0);font-size:var(--deckgo-highlight-code-ubuntu-header-button-font-size, 7px);color:var(--deckgo-highlight-code-ubuntu-header-button-color, black);text-shadow:var(--deckgo-highlight-code-ubuntu-header-button-text-shadow, 0px 1px 0px rgba(255, 255, 255, 0.2));box-shadow:var(--deckgo-highlight-code-ubuntu-header-button-box-shadow, 0px 0px 1px 0px #41403a, 0px 1px 1px 0px #474642)}div.ubuntu>div.close{background:var(--deckgo-highlight-code-ubuntu-header-button-close-background, linear-gradient(#f37458 0%, #de4c12 100%));border:var(--deckgo-highlight-code-ubuntu-header-button-close-border)}div.ubuntu>div.minimize{background:var(--deckgo-highlight-code-ubuntu-header-button-minimize-background, linear-gradient(#7d7871 0%, #595953 100%));border:var(--deckgo-highlight-code-ubuntu-header-button-minimize-border)}div.ubuntu>div.maximize{background:var(--deckgo-highlight-code-ubuntu-header-button-maximize-background, linear-gradient(#7d7871 0%, #595953 100%));border:var(--deckgo-highlight-code-ubuntu-header-button-maximize-border)}div.ubuntu>div.close span,div.ubuntu>div.minimize span,div.ubuntu>div.maximize span{display:var(--deckgo-highlight-code-ubuntu-header-button-span-display, inherit)}div.ubuntu>p{color:var(--deckgo-highlight-code-ubuntu-header-user-color, #d5d0ce);font-size:var(--deckgo-highlight-code-ubuntu-header-user-font-size, 12px);line-height:var(--deckgo-highlight-code-ubuntu-header-user-line-height, 14px);margin:var(--deckgo-highlight-code-ubuntu-header-user-margin, 0 0 1px 4px)}";
+const deckdeckgoHighlightCodeCss = "code[class*=\"language-\"],pre[class*=\"language-\"]{color:black;background:none;text-shadow:0 1px white;font-family:Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=\"language-\"]::-moz-selection,pre[class*=\"language-\"] ::-moz-selection,code[class*=\"language-\"]::-moz-selection,code[class*=\"language-\"] ::-moz-selection{text-shadow:none;background:#b3d4fc}pre[class*=\"language-\"]::selection,pre[class*=\"language-\"] ::selection,code[class*=\"language-\"]::selection,code[class*=\"language-\"] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=\"language-\"],pre[class*=\"language-\"]{text-shadow:none}}pre[class*=\"language-\"]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=\"language-\"],pre[class*=\"language-\"]{background:#f5f2f0}:not(pre)>code[class*=\"language-\"]{padding:.1em;border-radius:.3em;white-space:normal}.token.comment,.token.prolog,.token.doctype,.token.cdata{color:slategray}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.property,.token.tag,.token.boolean,.token.number,.token.constant,.token.symbol,.token.deleted{color:#905}.token.selector,.token.attr-name,.token.string,.token.char,.token.builtin,.token.inserted{color:#690}.token.operator,.token.entity,.token.url,.language-css .token.string,.style .token.string{color:#9a6e3a;background:hsla(0, 0%, 100%, .5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.function,.token.class-name{color:#DD4A68}.token.regex,.token.important,.token.variable{color:#e90}.token.important,.token.bold{font-weight:bold}.token.italic{font-style:italic}.token.entity{cursor:help}:host ::slotted([slot=code]){display:none}:host([editable]){cursor:var(--deckgo-editable-cursor, text)}:host([editable]) code:empty:not(:focus):after{content:var(--deckgo-highlight-code-empty-text, \"Click to add your code\")}:host(.deckgo-highlight-code-carbon){display:var(--deckgo-highlight-code-carbon-display, block);overflow:var(--deckgo-highlight-code-carbon-overflow, auto);border:var(--deckgo-highlight-code-carbon-border);border-radius:var(--deckgo-highlight-code-carbon-border-radius, 4px);background:var(--deckgo-highlight-code-carbon-background, #282a36);color:var(--deckgo-highlight-code-carbon-color, white);box-shadow:var(--deckgo-highlight-code-carbon-box-shadow, rgba(0, 0, 0, 0.55) 0 8px 16px);margin:var(--deckgo-highlight-code-carbon-margin, 16px 0)}:host(.deckgo-highlight-code-carbon) div.deckgo-highlight-code-container{margin:var(--deckgo-highlight-code-margin, 0 0 16px)}:host(.deckgo-highlight-code-carbon) div.deckgo-highlight-code-container code>div.deckgo-highlight-code-line-number:before{background:var(--deckgo-highlight-code-carbon-background, transparent);border-color:var(--deckgo-highlight-code-line-numbers, var(--deckgo-highlight-code-token-comment, #6272a4));color:var(--deckgo-highlight-code-line-numbers, var(--deckgo-highlight-code-token-comment, #6272a4))}:host(.deckgo-highlight-code-carbon) ::slotted([slot=code]){color:var(--deckgo-highlight-code-carbon-color, white)}:host(.deckgo-highlight-code-ubuntu){display:var(--deckgo-highlight-code-ubuntu-display, block);overflow:var(--deckgo-highlight-code-ubuntu-overflow, auto);border:var(--deckgo-highlight-code-ubuntu-border);border-radius:var(--deckgo-highlight-code-ubuntu-border-radius, 6px 6px 0 0);background:var(--deckgo-highlight-code-ubuntu-background, #4c1e3d);color:var(--deckgo-highlight-code-ubuntu-color, #ddd);box-shadow:var(--deckgo-highlight-code-ubuntu-box-shadow, 2px 4px 10px rgba(0, 0, 0, 0.5));margin:var(--deckgo-highlight-code-ubuntu-margin, 16px 0)}:host(.deckgo-highlight-code-ubuntu) div.deckgo-highlight-code-container{margin:var(--deckgo-highlight-code-margin, 0 0 16px);padding:var(--deckgo-highlight-code-padding, 2px 0 0);background:transparent}:host(.deckgo-highlight-code-ubuntu) div.deckgo-highlight-code-container code{font-family:var(--deckgo-highlight-code-font-family, \"Ubuntu mono\")}:host(.deckgo-highlight-code-ubuntu) div.deckgo-highlight-code-container code>div.deckgo-highlight-code-line-number:before{background:var(--deckgo-highlight-code-ubuntu-background, #4c1e3d)}:host(.deckgo-highlight-code-ubuntu) ::slotted([slot=code]){color:var(--deckgo-highlight-code-ubuntu-color, #ddd)}div.deckgo-highlight-code-container{color:var(--deckgo-highlight-code-color, inherit);background:var(--deckgo-highlight-code-background);padding:var(--deckgo-highlight-code-padding, 0 16px);border-radius:var(--deckgo-highlight-code-border-radius);margin:var(--deckgo-highlight-code-margin, 16px 0);transform-origin:bottom left;transition:all 0.2s ease-in-out;transform:scale(var(--deckgo-highlight-code-zoom, 1));direction:var(--deckgo-highlight-code-direction, ltr);text-align:var(--deckgo-highlight-code-text-align, start);width:var(--deckgo-highlight-code-container-width);height:var(--deckgo-highlight-code-container-height);display:var(--deckgo-highlight-code-container-display, block);justify-content:var(--deckgo-highlight-code-container-justify-content);flex-direction:var(--deckgo-highlight-code-container-flex-direction);align-items:var(--deckgo-highlight-code-container-align-items)}div.deckgo-highlight-code-container code{overflow-y:var(--deckgo-highlight-code-scroll, auto);white-space:var(--deckgo-highlight-code-white-space, pre-wrap);font-size:var(--deckgo-highlight-code-font-size);font-family:var(--deckgo-highlight-code-font-family, monospace);line-height:var(--deckgo-highlight-code-line-height);display:var(--deckgo-highlight-code-display, block);counter-reset:linenumber;height:100%;}div.deckgo-highlight-code-container code>div.deckgo-highlight-code-line-number{counter-increment:linenumber;position:relative;padding-left:3.5em}div.deckgo-highlight-code-container code>div.deckgo-highlight-code-line-number:before{content:counter(linenumber);display:inline-block;position:absolute;top:0;bottom:0;left:0;width:2.5em;background:var(--deckgo-highlight-code-background);border-right:1px solid var(--deckgo-highlight-code-line-numbers, var(--deckgo-highlight-code-token-comment, #6272a4));color:var(--deckgo-highlight-code-line-numbers, var(--deckgo-highlight-code-token-comment, #6272a4))}div.deckgo-highlight-code-container code span.deckgo-highlight-code-anchor-hidden{visibility:hidden}div.deckgo-highlight-code-container code .deckgo-highlight-code-line{background:var(--deckgo-highlight-code-line-background, #3e4564);border-top:var(--deckgo-highlight-code-line-border-top);border-bottom:var(--deckgo-highlight-code-line-border-bottom)}div.deckgo-highlight-code-container code .language-css .token.string:not(.deckgo-highlight-code-line),div.deckgo-highlight-code-container code .style .token.string:not(.deckgo-highlight-code-line),div.deckgo-highlight-code-container code .token.entity:not(.deckgo-highlight-code-line),div.deckgo-highlight-code-container code .token.operator:not(.deckgo-highlight-code-line),div.deckgo-highlight-code-container code .token.url:not(.deckgo-highlight-code-line){background:inherit}div.deckgo-highlight-code-container code .token.comment,div.deckgo-highlight-code-container code .token.prolog,div.deckgo-highlight-code-container code .token.doctype,div.deckgo-highlight-code-container code .token.cdata{color:var(--deckgo-highlight-code-token-comment, #6272a4)}div.deckgo-highlight-code-container code .token.punctuation{color:var(--deckgo-highlight-code-token-punctuation, #6272a4)}div.deckgo-highlight-code-container code .token.property,div.deckgo-highlight-code-container code .token.tag,div.deckgo-highlight-code-container code .token.boolean,div.deckgo-highlight-code-container code .token.number,div.deckgo-highlight-code-container code .token.constant,div.deckgo-highlight-code-container code .token.symbol,div.deckgo-highlight-code-container code .token.deleted{color:var(--deckgo-highlight-code-token-property, #bd93f9)}div.deckgo-highlight-code-container code .token.selector,div.deckgo-highlight-code-container code .token.attr-name,div.deckgo-highlight-code-container code .token.string,div.deckgo-highlight-code-container code .token.char,div.deckgo-highlight-code-container code .token.builtin,div.deckgo-highlight-code-container code .token.inserted{color:var(--deckgo-highlight-code-token-selector, #50fa7b)}div.deckgo-highlight-code-container code .token.operator,div.deckgo-highlight-code-container code .token.entity,div.deckgo-highlight-code-container code .token.url,div.deckgo-highlight-code-container code .language-css .token.string,div.deckgo-highlight-code-container code .style .token.string{color:var(--deckgo-highlight-code-token-operator, #ff79c6)}div.deckgo-highlight-code-container code .token.atrule,div.deckgo-highlight-code-container code .token.attr-value,div.deckgo-highlight-code-container code .token.keyword{color:var(--deckgo-highlight-code-token-atrule, #ff79c6)}div.deckgo-highlight-code-container code .token.function,div.deckgo-highlight-code-container code .token.class-name{color:var(--deckgo-highlight-code-token-function, #ffb86c)}div.deckgo-highlight-code-container code .token.regex,div.deckgo-highlight-code-container code .token.important,div.deckgo-highlight-code-container code .token.variable{color:var(--deckgo-highlight-code-token-regex, #f1fa8c)}div.carbon{display:flex;justify-content:flex-start;padding:var(--deckgo-highlight-code-carbon-header-padding, 8px 16px);margin:var(--deckgo-highlight-code-carbon-header-margin, 0)}div.carbon>div{display:var(--deckgo-highlight-code-carbon-toolbar-display, \"block\");width:var(--deckgo-highlight-code-carbon-header-button-width, 12px);height:var(--deckgo-highlight-code-carbon-header-button-height, 12px);border-radius:var(--deckgo-highlight-code-carbon-header-button-border-radius, 50%);margin:var(--deckgo-highlight-code-carbon-header-button-margin, 8px 6px 8px 0)}div.carbon>div.red{background:var(--deckgo-highlight-code-carbon-header-button-red-background, #ff5f56);border:var(--deckgo-highlight-code-carbon-header-button-red-border, 0.5px solid #e0443e)}div.carbon>div.yellow{background:var(--deckgo-highlight-code-carbon-header-button-yellow-background, #ffbd2e);border:var(--deckgo-highlight-code-carbon-header-button-yellow-border, 0.5px solid #dea123)}div.carbon>div.green{background:var(--deckgo-highlight-code-carbon-header-button-green-background, #27c93f);border:var(--deckgo-highlight-code-carbon-header-button-green-border, 0.5px solid #1aab29)}div.ubuntu{display:flex;justify-content:flex-start;align-items:center;padding:var(--deckgo-highlight-code-ubuntu-header-padding, 0 8px);height:var(--deckgo-highlight-code-ubuntu-header-height, 25px);background:var(--deckgo-highlight-code-ubuntu-header-background, linear-gradient(#504b45 0%, #3c3b37 100%));font-family:var(--deckgo-highlight-code-ubuntu-header-font-family, \"Ubuntu\")}div.ubuntu>div{display:flex;align-items:center;justify-content:center;width:var(--deckgo-highlight-code-ubuntu-header-button-width, 12px);height:var(--deckgo-highlight-code-ubuntu-header-button-height, 12px);border-radius:var(--deckgo-highlight-code-ubuntu-header-button-border-radius, 50%);margin:var(--deckgo-highlight-code-ubuntu-header-button-margin, 0 4px 0 0);font-size:var(--deckgo-highlight-code-ubuntu-header-button-font-size, 7px);color:var(--deckgo-highlight-code-ubuntu-header-button-color, black);text-shadow:var(--deckgo-highlight-code-ubuntu-header-button-text-shadow, 0px 1px 0px rgba(255, 255, 255, 0.2));box-shadow:var(--deckgo-highlight-code-ubuntu-header-button-box-shadow, 0px 0px 1px 0px #41403a, 0px 1px 1px 0px #474642)}div.ubuntu>div.close{background:var(--deckgo-highlight-code-ubuntu-header-button-close-background, linear-gradient(#f37458 0%, #de4c12 100%));border:var(--deckgo-highlight-code-ubuntu-header-button-close-border)}div.ubuntu>div.minimize{background:var(--deckgo-highlight-code-ubuntu-header-button-minimize-background, linear-gradient(#7d7871 0%, #595953 100%));border:var(--deckgo-highlight-code-ubuntu-header-button-minimize-border)}div.ubuntu>div.maximize{background:var(--deckgo-highlight-code-ubuntu-header-button-maximize-background, linear-gradient(#7d7871 0%, #595953 100%));border:var(--deckgo-highlight-code-ubuntu-header-button-maximize-border)}div.ubuntu>div.close span,div.ubuntu>div.minimize span,div.ubuntu>div.maximize span{display:var(--deckgo-highlight-code-ubuntu-header-button-span-display, inherit)}div.ubuntu>p{color:var(--deckgo-highlight-code-ubuntu-header-user-color, #d5d0ce);font-size:var(--deckgo-highlight-code-ubuntu-header-user-font-size, 12px);line-height:var(--deckgo-highlight-code-ubuntu-header-user-line-height, 14px);margin:var(--deckgo-highlight-code-ubuntu-header-user-margin, 0 0 1px 4px)}";
 
 const DeckdeckgoHighlightCode = class {
   constructor(hostRef) {
@@ -2214,9 +2225,9 @@ const DeckdeckgoHighlightCode = class {
     this.hideAnchor = true;
     this.language = 'javascript';
     this.lineNumbers = false;
-    this.terminal = _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["D"].CARBON;
+    this.terminal = _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["D"].CARBON;
     this.editable = false;
-    this.theme = _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["a"].DRACULA;
+    this.theme = _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["a"].DRACULA;
     this.anchorOffsetTop = 0;
     this.fetchOrParseAfterUpdate = false;
     this.loaded = false;
@@ -2248,7 +2259,7 @@ const DeckdeckgoHighlightCode = class {
     }
   }
   async loadTheme() {
-    if (this.terminal !== _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["D"].CARBON || !this.theme) {
+    if (this.terminal !== _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["D"].CARBON || !this.theme) {
       this.themeStyle = undefined;
       return;
     }
@@ -2268,7 +2279,7 @@ const DeckdeckgoHighlightCode = class {
     }
   }
   async fetchOrParse() {
-    if (!this.language || !_deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["d"][this.language]) {
+    if (!this.language || !_deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["d"][this.language]) {
       return;
     }
     if (this.src) {
@@ -2298,7 +2309,7 @@ const DeckdeckgoHighlightCode = class {
   }
   async loadLanguages(reload = false) {
     this.loaded = false;
-    if (!this.language || !_deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["d"][this.language]) {
+    if (!this.language || !_deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["d"][this.language]) {
       console.error(`Language ${this.language} is not supported`);
       return;
     }
@@ -2310,12 +2321,12 @@ const DeckdeckgoHighlightCode = class {
     if (!this.language) {
       return;
     }
-    const definition = _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["d"][this.language];
+    const definition = _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["d"][this.language];
     this.languagesToLoad = definition.require && definition.require.length > 0 ? [this.language, ...definition.require] : [this.language];
   }
   async loadLanguagesRequire() {
     const promises = [];
-    const definition = _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["d"][this.language];
+    const definition = _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["d"][this.language];
     if (definition.require) {
       promises.push(...definition.require.map((extraScript) => this.loadScript(extraScript, false, true)));
     }
@@ -2356,7 +2367,7 @@ const DeckdeckgoHighlightCode = class {
         // if the language definition doesn't exist or if unpkg is down, display code anyway
         this.prismLanguageLoaded.emit(lang);
       };
-      const definition = _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["d"][this.language];
+      const definition = _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["d"][this.language];
       let language = !requireScript && definition.main ? definition.main : lang;
       script.src = 'https://unpkg.com/prismjs@latest/components/prism-' + language + '.js';
       script.setAttribute('deckdeckgo-prism', language);
@@ -2373,7 +2384,7 @@ const DeckdeckgoHighlightCode = class {
     await this.loadGoogleFonts();
   }
   async loadGoogleFonts() {
-    if (this.terminal === _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["D"].UBUNTU) {
+    if (this.terminal === _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["D"].UBUNTU) {
       await injectCSS('google-fonts-ubuntu', 'https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono&display=swap');
     }
   }
@@ -2398,9 +2409,10 @@ const DeckdeckgoHighlightCode = class {
     });
   }
   parseSlottedCode() {
+    var _a;
     const code = this.el.querySelector("[slot='code']");
     if (code) {
-      return this.parseCode(code.innerText ? code.innerText.trim() : code.innerText);
+      return this.parseCode((_a = code === null || code === void 0 ? void 0 : code.innerHTML) === null || _a === void 0 ? void 0 : _a.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&'));
     }
     else {
       return new Promise((resolve) => {
@@ -2644,16 +2656,16 @@ const DeckdeckgoHighlightCode = class {
   }
   render() {
     const hostClass = {
-      'deckgo-highlight-code-carbon': this.terminal === _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["D"].CARBON,
-      'deckgo-highlight-code-ubuntu': this.terminal === _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["D"].UBUNTU,
+      'deckgo-highlight-code-carbon': this.terminal === _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["D"].CARBON,
+      'deckgo-highlight-code-ubuntu': this.terminal === _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["D"].UBUNTU,
     };
-    if (this.terminal === _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["D"].CARBON) {
+    if (this.terminal === _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["D"].CARBON) {
       hostClass[`deckgo-highlight-code-theme-${this.theme}`] = true;
     }
     return (Object(_index_5142f31b_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_5142f31b_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: hostClass, onClick: () => this.edit() }, this.renderCarbon(), this.renderUbuntu(), Object(_index_5142f31b_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "deckgo-highlight-code-container" }, Object(_index_5142f31b_js__WEBPACK_IMPORTED_MODULE_0__["h"])("code", { contentEditable: this.editable, onBlur: async () => await this.applyCode(), onInput: () => this.inputCode(), onKeyDown: ($event) => this.catchTab($event), ref: (el) => (this.refCode = el) }), Object(_index_5142f31b_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "code" }))));
   }
   renderCarbon() {
-    if (this.terminal !== _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["D"].CARBON) {
+    if (this.terminal !== _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["D"].CARBON) {
       return undefined;
     }
     return [
@@ -2665,7 +2677,7 @@ const DeckdeckgoHighlightCode = class {
     return Object(_index_5142f31b_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: color });
   }
   renderUbuntu() {
-    if (this.terminal !== _deckdeckgo_highlight_code_languages_5f0b1c54_js__WEBPACK_IMPORTED_MODULE_1__["D"].UBUNTU) {
+    if (this.terminal !== _deckdeckgo_highlight_code_languages_93c3ae76_js__WEBPACK_IMPORTED_MODULE_1__["D"].UBUNTU) {
       return undefined;
     }
     return (Object(_index_5142f31b_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "ubuntu" }, this.renderUbuntuCircle('close'), this.renderUbuntuCircle('minimize'), this.renderUbuntuCircle('maximize'), Object(_index_5142f31b_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p", null, Object(_index_5142f31b_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "user" }))));
