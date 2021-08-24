@@ -97,5 +97,11 @@ module.exports = {
         'Accelerate your innovation with a flexible data platform designed to help you build, scale, and iterate.',
       color: '#13aa52',
     },
+    tool: {
+      name: 'Tool',
+      description:
+        'Tools that help coding',
+      color: '#499cd2',
+    },
   },
 };

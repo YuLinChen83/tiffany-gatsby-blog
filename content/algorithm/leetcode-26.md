@@ -49,6 +49,19 @@ var removeDuplicates = function(array) {
 };
 ```
 
+```javascript
+var removeDuplicates = function(nums) {
+  let n = 0;
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] !== nums[n]) {
+      n++;
+      nums[n] = nums[i];
+    }
+  }
+  return n + 1;
+};
+```
+
 ### Complexity Analysis
 
 - **Time complexity:** O(n)

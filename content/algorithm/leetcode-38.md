@@ -44,29 +44,53 @@ countAndSay(4) = say "21" = one 2 + one 1 = "12" + "11" = "1211"
  * @return {string}
  */
 var countAndSay = function (n) {
-  if (n == 1) return '1';
-
-  let digitStr = countAndSay(n - 1);
-  let sayStr = '';
-  let startIdx = 0;
-  let count = 0;
-  for (let i = 0; i < digitStr.length; i++) {
-    if (digitStr[i] === digitStr[startIdx]) count++;
-    else {
-      sayStr += `${count}${digitStr[startIdx]}`;
-      count = 1;
-      if (i != digitStr.length - 1) startIdx = i;
+  if (n === 1) return "1";
+  let tmp = "1";
+  let say = "";
+  let count;
+  for (let i = 0; i < n - 1; i++) {
+    count = 1;
+    say = "";
+    for (let j = 0; j < tmp.length; j++) {
+      if (tmp[j] === tmp[j + 1]) count++;
+      else {
+        say = say + count + tmp[j];
+        count = 1;
+      }
     }
+    tmp = say;
   }
-  return sayStr + (count > 0 ? `${count}${digitStr[digitStr.length - 1]}` : '');
+  return say;
 };
 ```
 ```javascript
+/**
+ * @param {number} n
+ * @return {string}
+ */
+var countAndSay = function (n) {
+  if (n === 1) return "1";
+  let prev = countAndSay(n - 1);
+  let say = "";
+  let count = 1;
+  for (let i = 0; i < prev.length; i++) {
+    if (prev[i + 1] && prev[i] == prev[i + 1]) count++;
+    else {
+      say = say + count + prev[i];
+      count = 1;
+    }
+  }
+  return say;
+};
+```
+```javascript
+/**
+ * @param {number} n
+ * @return {string}
+ */
 const countAndSay = function (n) {
   if (n === 1) return '1';
-
   const prev = countAndSay(n - 1);
-
   let result = '';
   for (let o = 0, i = 1; i <= prev.length; i++) {
     prev[i] !== prev[o] && ((result += `${i - o}${prev[o]}`), (o = i));

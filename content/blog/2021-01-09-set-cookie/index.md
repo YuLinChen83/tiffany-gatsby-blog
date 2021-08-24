@@ -18,7 +18,7 @@ excerpt: 記錄個之前在和同事們弄 Side project 時犯蠢遇到的問題
 ☞ 就算 Response 結果沒回來，此請求是有效的、已操作完的
 </div>
 
-當我們在 JavaScript 中透過 fetch 或 XMLHttpRequest 存取資源時，需要遵守 CORS。瀏覽器在發送請求之前會先發送 ==preflight request (預檢請求)==，確認伺服器端設定正確的 `Access-Control-Allow-Methods`、`Access-Control-Allow-Headers` 及 `Access-Control-Allow-Origin` 等 header，才會實際發送請求
+當我們在 JavaScript 中透過 fetch 或 XMLHttpRequest 存取資源時，需要遵守 CORS。瀏覽器在發送請求之前會先發送 **preflight request (預檢請求)**，確認伺服器端設定正確的 `Access-Control-Allow-Methods`、`Access-Control-Allow-Headers` 及 `Access-Control-Allow-Origin` 等 header，才會實際發送請求
 
 （結果一開始前後端什麼都沒設定也沒有遇到 CORS⋯⋯
 看到 Apollo Server 可以把 cors 關掉，總之先試再說
