@@ -8,7 +8,7 @@ const SkillsProgress = () => (
     <h2>My Skills</h2>
     <Row gutter={[20, 20]}>
       <Col xs={24} sm={24} md={12}>
-        <p>主要熟悉：(2021年為準)</p>
+        <p>目前較常使用的：(2021年為準)</p>
         <ProgressBar percent={80} text="Javascript" />
         <ProgressBar percent={80} text="ReactJS (Class component / Hooks)" />
         <ProgressBar percent={80} text="Redux" />
@@ -26,7 +26,9 @@ const SkillsProgress = () => (
       </Col>
       <Col xs={24} sm={24} md={12}>
         <div className={style.more}>
-          <p><span>其他</span>曾經工作或在學時接觸過或自己略研究過：</p>
+          <p>
+            <span>其他</span>曾經工作或在學時接觸過或自己略研究過：
+          </p>
           <h3>Frontend</h3>
           <ul>
             <li>TypeScript</li>

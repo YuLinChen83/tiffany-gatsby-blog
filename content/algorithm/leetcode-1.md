@@ -19,7 +19,7 @@ You can return the answer in any order.
  * @param {number} target
  * @return {number[]}
  */
-var twoSum = function (nums, target) {
+var twoSum = function(nums, target) {
   const m = {};
   for (let i = 0; i < nums.length; i++) {
     if (m[target - nums[i]] !== undefined) {
@@ -31,4 +31,11 @@ var twoSum = function (nums, target) {
 
 console.log(twoSum([2, 7, 11, 15], 9)); // [0,1]
 ```
-* 可以一次存 number 和其 index
+
+- 可以一次存 number 和其 index
+
+### 變化型
+
+1. [Two Sum](http://localhost:8000/algorithm/20210710)
+2. [Two Sum II - Input array is sorted](/algorithm/20211025)
+3. [3Sum](/algorithm/20211026)
