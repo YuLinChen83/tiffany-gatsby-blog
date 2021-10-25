@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: http://localhost:8000/tiffany-gatsby-blog/sitemap/sitemap-index.xml
+Sitemap: http://localhost:8000/sitemap.xml
 Host: localhost:8000

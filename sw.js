@@ -27,17 +27,17 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-bde3da404cdae9b6aed0.js"
+    "url": "webpack-runtime-25a3369e8789a41b6370.js"
   },
   {
     "url": "framework-b17a64ad725e0b3c1338.js"
   },
   {
-    "url": "app-4cd11931d73ad9f340a6.js"
+    "url": "app-2a44de7a9b9442e39ebf.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "1353bbd881d13e138492031e9f09f4f3"
+    "revision": "93babd5e01fc0af68f35ebe72405d200"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-a95b272f8c25b9a8a758.js"
@@ -48,7 +48,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "9f568e50ec2af90205d47e24d23cc0ff"
+    "revision": "31d09403f3870439a7035fabb86b149e"
   },
   {
     "url": "polyfill-34056b0c377b751bdf13.js"
@@ -147,7 +147,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/tiffany-gatsby-blog/app-4cd11931d73ad9f340a6.js`))) {
+  if (!resources || !(await caches.match(`/tiffany-gatsby-blog/app-2a44de7a9b9442e39ebf.js`))) {
     return await fetch(event.request)
   }
 
