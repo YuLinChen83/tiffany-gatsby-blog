@@ -33,12 +33,6 @@ const DomContent = () => (
       <ul className={`box ${style.badge} contactBlock`}>
         <li className={style.contactBlockItem}>
           <span>
-            <FeatherIcon size="19" icon="smile" />
-          </span>
-          喜愛爬山/烘焙/動漫的女子
-        </li>
-        <li className={style.contactBlockItem}>
-          <span>
             <FeatherIcon size="19" icon="map-pin" />
           </span>
           Taipei

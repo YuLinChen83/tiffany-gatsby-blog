@@ -75,12 +75,12 @@ module.exports = [
       ],
     },
   },
-  {
-    resolve: 'gatsby-source-instagram-all',
-    options: {
-      access_token: process.env.INSTAGRAM_TOKEN,
-    },
-  },
+  // {
+  //   resolve: 'gatsby-source-instagram-all',
+  //   options: {
+  //     access_token: process.env.INSTAGRAM_TOKEN,
+  //   },
+  // },
   // {
   //   resolve: 'gatsby-transformer-remark',
   //   options: {
