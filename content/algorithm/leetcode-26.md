@@ -1,6 +1,6 @@
 ---
 title: '26. Remove Duplicates from Sorted Array'
-path: algorithm/20210110
+path: algorithm/26
 tags: [leetcode, easy]
 date: 2021-01-10
 ---

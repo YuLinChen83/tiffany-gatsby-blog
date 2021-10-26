@@ -1,6 +1,6 @@
 ---
 title: "118. Pascal's Triangle"
-path: 'algorithm/20210108'
+path: 'algorithm/118'
 tags: [leetcode, easy]
 date: 2021-01-08
 ---

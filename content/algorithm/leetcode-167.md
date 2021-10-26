@@ -1,6 +1,6 @@
 ---
 title: '167. Two Sum II - Input array is sorted'
-path: algorithm/20211025
+path: algorithm/167
 tags: [leetcode, easy]
 date: 2021-10-25
 ---
@@ -34,6 +34,6 @@ var twoSum = function(numbers, target) {
 
 ### 變化型
 
-1. [Two Sum](http://localhost:8000/algorithm/20210710)
-2. [Two Sum II - Input array is sorted](/algorithm/20211025)
-3. [3Sum](/algorithm/20211026)
+1. [Two Sum](http://localhost:8000/algorithm/1)
+2. [Two Sum II - Input array is sorted](/algorithm/167)
+3. [3Sum](/algorithm/15)

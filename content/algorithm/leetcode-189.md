@@ -1,6 +1,6 @@
 ---
 title: '189. Rotate Array'
-path: algorithm/20210110-3
+path: algorithm/189
 tags: [leetcode, medium]
 date: 2021-01-10
 ---
@@ -71,8 +71,8 @@ var reverse = (nums, start, end) => {
 說明舉例  
 Original List : 1 2 3 4 5 6 7  
 After reversing all numbers : 7 6 5 4 3 2 1  
-After reversing first k numbers : *5 6 7* 4 3 2 1  
-After revering last n-k numbers (Result) : 5 6 7 *1 2 3 4*  
+After reversing first k numbers : _5 6 7_ 4 3 2 1  
+After revering last n-k numbers (Result) : 5 6 7 _1 2 3 4_  
 k%=nums.length 並分三次 reverse 即可得到所要的
 
 ### Complexity Analysis

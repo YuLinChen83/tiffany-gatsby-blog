@@ -7,9 +7,8 @@
   "homepage": "https://github.com/YuLinChen83/tiffany-gatsby-blog",
   "scripts": {
     "build": "gatsby build",
-    "develop": "rm -rf .cache && gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
+    "start": "rm -rf .cache && gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",

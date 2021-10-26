@@ -1,6 +1,6 @@
 ---
 title: '122. Best Time to Buy and Sell Stock II'
-path: algorithm/20210110-2
+path: algorithm/122
 tags: [leetcode, easy]
 date: 2021-01-10
 ---

@@ -1,6 +1,6 @@
 ---
 title: '15. 3Sum'
-path: algorithm/20211026
+path: algorithm/15
 tags: [leetcode, medium]
 date: 2021-10-26
 ---
@@ -46,6 +46,6 @@ var threeSum = function(nums) {
 
 ### 變化型
 
-1. [Two Sum](http://localhost:8000/algorithm/20210710)
-2. [Two Sum II - Input array is sorted](/algorithm/20211025)
-3. [3Sum](/algorithm/20211026)
+1. [Two Sum](http://localhost:8000/algorithm/1)
+2. [Two Sum II - Input array is sorted](/algorithm/167)
+3. [3Sum](/algorithm/15)

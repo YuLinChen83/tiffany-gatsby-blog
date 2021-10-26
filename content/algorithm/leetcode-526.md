@@ -1,6 +1,6 @@
 ---
 title: '526. Beautiful Arrangement'
-path: algorithm/20210104
+path: algorithm/526
 tags: [leetcode, medium]
 date: 2021-01-04
 ---
@@ -42,7 +42,7 @@ The second beautiful arrangement is [2,1]:
  * @param {number} n
  * @return {number}
  */
-var countArrangement = function (n) {
+var countArrangement = function(n) {
   if (n === 0) return 0;
   let ans = 0,
     map = new Map(),
@@ -57,7 +57,7 @@ var countArrangement = function (n) {
     }
     map.set(i, temp);
   }
-  
+
   // n!地遍歷各組合
   function backtrack(curr) {
     if (curr.length === n) {

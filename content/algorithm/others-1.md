@@ -1,6 +1,6 @@
 ---
 title: 'Hostnames tracker'
-path: algorithm/20210106
+path: algorithm/o1
 tags: [algorithm]
 date: 2021-08-24
 ---
@@ -11,8 +11,8 @@ Hostnames consist of an alphabetic host type (e.g. `"apibox"`) concatenated with
 
 Your task is to create a class called `Tracker` that supports two operations:
 
-* `allocate(hostType)`, which reserves the first available hostname and returns it;
-* `deallocate(hostname)`, which should release that hostname back into the pool.
+- `allocate(hostType)`, which reserves the first available hostname and returns it;
+- `deallocate(hostname)`, which should release that hostname back into the pool.
 
 The input for this task is an array of sequential queries in string form, where a query of type "A <hostType>" means a call to `tracker.allocate(<hostType>)`, and query of type `"D <hostname>"` means a call tracker.deallocate(<hostname>). The output should be an array of return values of all allocate calls.
 
@@ -24,7 +24,6 @@ Note that deallocating a non-allocated hostname is a valid operation.
 
 **Input:** `["A apibox", "A apibox", "D apibox1", "A apibox", "A sitebox"]`  
 **Output:** `hostAllocation(queries) = ["apibox1", "apibox2", "apibox1", "sitebox1"]`
-
 
 ```sh
 >> tracker.allocate('apibox');
@@ -97,5 +96,4 @@ function hostAllocation(queries) {
 
 console.log(hostAllocation(['A apibox', 'A apibox', 'D apibox1', 'A apibox', 'A sitebox']));
 // ["apibox1", "apibox2", "apibox1", "sitebox1"]
-
 ```

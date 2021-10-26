@@ -1,6 +1,6 @@
 ---
 title: '283. Move Zeroes'
-path: algorithm/20210712
+path: algorithm/283
 tags: [leetcode, easy]
 date: 2021-07-12
 ---
@@ -16,7 +16,7 @@ Note that you must do this **in-place** without making a copy of the array.
  * @param {number[]} nums
  * @return {void} Do not return anything, modify nums in-place instead.
  */
-var moveZeroes = function (nums) {
+var moveZeroes = function(nums) {
   let j = 0;
   for (let i = 0; i < nums.length; i++) {
     if (nums[i] != 0) {
@@ -27,7 +27,7 @@ var moveZeroes = function (nums) {
   }
   return nums;
 };
-console.log(moveZeroes([0,1,0,3,12]));
+console.log(moveZeroes([0, 1, 0, 3, 12]));
 
 /**
 [ 0, 1, 0, 3, 12 ]
@@ -35,6 +35,6 @@ console.log(moveZeroes([0,1,0,3,12]));
 [ 1, 3, 0, 0, 12 ]
 [ 1, 3, 12, 0, 0 ]
 **/
-
 ```
-* 非 0 數最後都依序從最左開始放置 -> 設置目前最左可放非 0 數的 index
+
+- 非 0 數最後都依序從最左開始放置 -> 設置目前最左可放非 0 數的 index

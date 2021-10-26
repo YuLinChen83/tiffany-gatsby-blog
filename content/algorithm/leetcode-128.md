@@ -1,6 +1,6 @@
 ---
 title: '128. Longest Consecutive Sequence'
-path: algorithm/20210826
+path: algorithm/128
 tags: [leetcode, medium]
 date: 2021-08-26
 ---

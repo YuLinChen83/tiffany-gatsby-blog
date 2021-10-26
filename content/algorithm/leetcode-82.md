@@ -1,6 +1,6 @@
 ---
 title: '82. Remove Duplicates from Sorted List II'
-path: algorithm/20210105
+path: algorithm/82
 tags: [leetcode, medium]
 date: 2021-01-05
 ---
@@ -62,22 +62,22 @@ var deleteDuplicates = function(head) {
 
 ```javascript
 var deleteDuplicates = function(head) {
-    let pre = new ListNode(0);
-    pre.next = head;
-    let node = pre;
+  let pre = new ListNode(0);
+  pre.next = head;
+  let node = pre;
 
-    while (node.next && node.next.next) {
-      if (node.next.val === node.next.next.val) {
-        let val = node.next.val;
-        while (node.next && node.next.val == val) {
-          node.next = node.next.next;
-        }
-      } else {
-        node = node.next;
+  while (node.next && node.next.next) {
+    if (node.next.val === node.next.next.val) {
+      let val = node.next.val;
+      while (node.next && node.next.val == val) {
+        node.next = node.next.next;
       }
+    } else {
+      node = node.next;
     }
+  }
 
-    return pre.next;
+  return pre.next;
 };
 ```
 

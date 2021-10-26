@@ -1,6 +1,6 @@
 ---
 title: '1539. Kth Missing Positive Number'
-path: algorithm/20210106
+path: algorithm/1539
 tags: [leetcode, easy]
 date: 2021-01-06
 ---

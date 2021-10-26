@@ -1,6 +1,6 @@
 ---
 title: '88. Merge Sorted Array'
-path: algorithm/20210829
+path: algorithm/88
 tags: [leetcode, easy]
 date: 2021-08-29
 ---
@@ -23,12 +23,10 @@ The final sorted array should not be returned by the function, but instead be st
 **Input:** nums1 = [1], m = 1, nums2 = [], n = 0  
 **Output:** [1]
 
-
 ### Example 3:
 
 **Input:** nums1 = [0], m = 0, nums2 = [1], n = 1  
 **Output:** [1]
-
 
 ```javascript
 /**
@@ -38,29 +36,32 @@ The final sorted array should not be returned by the function, but instead be st
  * @param {number} n
  * @return {void} Do not return anything, modify nums1 in-place instead.
  */
-var merge = function (nums1, m, nums2, n) {
-    let pos = m + n - 1;
-    m--, n--;
-    while (n >= 0) {
-        if (nums1[m] > nums2[n]) {
-            nums1[pos] = nums1[m];
-            m--;
-        } else {
-            nums1[pos] = nums2[n];
-            n--
-        }
-        pos--;
+var merge = function(nums1, m, nums2, n) {
+  let pos = m + n - 1;
+  m--, n--;
+  while (n >= 0) {
+    if (nums1[m] > nums2[n]) {
+      nums1[pos] = nums1[m];
+      m--;
+    } else {
+      nums1[pos] = nums2[n];
+      n--;
     }
+    pos--;
+  }
 };
 ```
+
 簡化版
+
 ```javascript
-var merge = function (nums1, m, nums2, n) {
-    let pos = m + n - 1;
-    m--, n--;
-    while (n >= 0) {
-        nums1[pos--] = (nums1[m] > nums2[n]) ? nums1[m--] : nums2[n--];
-    }
+var merge = function(nums1, m, nums2, n) {
+  let pos = m + n - 1;
+  m--, n--;
+  while (n >= 0) {
+    nums1[pos--] = nums1[m] > nums2[n] ? nums1[m--] : nums2[n--];
+  }
 };
 ```
-* 從尾端開始比較、大到小往前排定
+
+- 從尾端開始比較、大到小往前排定
