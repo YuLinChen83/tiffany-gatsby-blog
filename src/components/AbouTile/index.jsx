@@ -12,6 +12,7 @@ const AboutTile = (props) => {
         <h4>{textH4 || ''}</h4>
         <h3>{textH3 || ''}</h3>
       </div>
+      yoooo
     </div>
   );
 };
