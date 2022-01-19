@@ -13,8 +13,8 @@ Each time you can either climb `1` or `2` steps. In how many distinct ways can y
 
 ### Example 1:
 
-**Input:** n = 2
-**Output:** 2
+**Input:** n = 2  
+**Output:** 2  
 **Explanation:** There are two ways to climb to the top.
 
 1. 1 step + 1 step
@@ -22,8 +22,8 @@ Each time you can either climb `1` or `2` steps. In how many distinct ways can y
 
 ### Example 2:
 
-**Input:** n = 3
-**Output:** 3
+**Input:** n = 3  
+**Output:** 3  
 **Explanation:** There are three ways to climb to the top.
 
 1. 1 step + 1 step + 1 step
@@ -37,7 +37,7 @@ Each time you can either climb `1` or `2` steps. In how many distinct ways can y
  */
 var climbStairs = function(n) {
   if (n < 3) return n;
-  const history = [0, 1, 2];
+  const history = [1, 1, 2];
   for (let i = 3; i <= n; i++) {
     history[i] = history[i - 1] + history[i - 2];
   }
@@ -71,3 +71,30 @@ var climbStairs = function(n) {
 
 > - Dynamic Programming 題目
 > - 找出規律 → 走到 n 階的方法相當於走到 n-1 階的方法和走到 n-2 階的方法和 (留最後一步的 1 或 2 階)
+
+---
+
+## 延伸
+
+同理若限定一次能走 `1或2或3階`  
+**Input:** n = 4  
+**Output:** 7  
+**Explanation:** There are seven ways to climb to the top.
+
+```javascript
+/**
+ * @param {number} n
+ * @return {number}
+ */
+var climbStairs = function(n) {
+  if (n < 3) return n;
+  const history = [1, 1, 2];
+  for (let i = 3; i <= n; i++) {
+    history[i] = history[i - 1] + history[i - 2] + history[i - 3];
+  }
+  return history[n];
+};
+```
+
+- **Time complexity:** O(n)
+- **Space complexity:** O(n)
