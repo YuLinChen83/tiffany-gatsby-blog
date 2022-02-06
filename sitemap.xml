@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>http://localhost:8000/tiffany-gatsby-blog/blog/20220206</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://localhost:8000/tiffany-gatsby-blog/algorithm/15</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://localhost:8000/tiffany-gatsby-blog/algorithm/70</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://localhost:8000/tiffany-gatsby-blog/algorithm/167</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -10,8 +11,8 @@
 <url> <loc>http://localhost:8000/tiffany-gatsby-blog/algorithm/204</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://localhost:8000/tiffany-gatsby-blog/algorithm/128</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://localhost:8000/tiffany-gatsby-blog/algorithm/o1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://localhost:8000/tiffany-gatsby-blog/blog/20210725-2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://localhost:8000/tiffany-gatsby-blog/blog/20210725</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://localhost:8000/tiffany-gatsby-blog/blog/20210725-2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://localhost:8000/tiffany-gatsby-blog/algorithm/283</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://localhost:8000/tiffany-gatsby-blog/algorithm/3</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://localhost:8000/tiffany-gatsby-blog/algorithm/1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -19,9 +20,9 @@
 <url> <loc>http://localhost:8000/tiffany-gatsby-blog/algorithm/122</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://localhost:8000/tiffany-gatsby-blog/algorithm/189</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://localhost:8000/tiffany-gatsby-blog/algorithm/26</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://localhost:8000/tiffany-gatsby-blog/blog/20210109-2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://localhost:8000/tiffany-gatsby-blog/blog/20210109</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://localhost:8000/tiffany-gatsby-blog/blog/20210109-3</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://localhost:8000/tiffany-gatsby-blog/blog/20210109</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://localhost:8000/tiffany-gatsby-blog/blog/20210109-2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://localhost:8000/tiffany-gatsby-blog/algorithm/118</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://localhost:8000/tiffany-gatsby-blog/algorithm/38</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://localhost:8000/tiffany-gatsby-blog/algorithm/1539</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -47,11 +48,11 @@
 <url> <loc>http://localhost:8000/tiffany-gatsby-blog/blog/20170604</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://localhost:8000/tiffany-gatsby-blog/blog/20170508</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://localhost:8000/tiffany-gatsby-blog/blog/20170421</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://localhost:8000/tiffany-gatsby-blog/tags/javascript</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://localhost:8000/tiffany-gatsby-blog/tags/leetcode</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://localhost:8000/tiffany-gatsby-blog/tags/medium</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://localhost:8000/tiffany-gatsby-blog/tags/easy</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://localhost:8000/tiffany-gatsby-blog/tags/algorithm</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://localhost:8000/tiffany-gatsby-blog/tags/javascript</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://localhost:8000/tiffany-gatsby-blog/tags/tool</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://localhost:8000/tiffany-gatsby-blog/tags/apollo</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://localhost:8000/tiffany-gatsby-blog/tags/security</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
